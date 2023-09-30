@@ -45,7 +45,7 @@ paginate: 10
 paginate_path: "/page:num/"
 
 #google analytics ???
-#gtag: "G-HKWW77BNTR"
+gtag: "G-46XHJ2N1WP"
 
 defaults:
   -
