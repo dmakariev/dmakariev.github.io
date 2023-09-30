@@ -61,6 +61,7 @@ defaults:
       show-subscribe: true
       support_promo_box: true
       after-content: [share-section.html, scroll-box.html]
+      footer-extra: [mermaid.html, mathjax.html]
   -
     scope:
       path: "notblog"
@@ -73,19 +74,21 @@ defaults:
       show-subscribe: true
       support_promo_box: true
       after-content: [share-section.html, scroll-box.html]
+      footer-extra: [mermaid.html, mathjax.html]
   -
     scope:
       path: "pages"
     values:
       layout: "page"
       comments: false
+      footer-extra: [mermaid.html, mathjax.html]
   -
     scope:
       path: ""
     values:
       layout: "page"
       before-content: [support_promo_box.html, carbonads.html]
-      footer-extra: footer-subscribe.html
+      footer-extra: [footer-subscribe.html, mermaid.html, mathjax.html]
 
 exclude:
   - CHANGELOG.md
