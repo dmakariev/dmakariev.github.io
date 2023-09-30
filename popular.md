@@ -4,7 +4,7 @@ title: "Hi, I'm Dimitar"
 subtitle: Java Consultant / Software Developer / Applied Mathematics Practitioner  
 css: "/assets/css/index.css"
 share-img: /assets/img/dmakariev.jpeg
-share-title: "Dimitar Makariev - Java consultant"
+share-title: "Dimitar Makariev - Java consultant | Popular posts"
 share-description: "I'm a Java Software developer, consultant, and a Master of Science in Applied Mathematics from Sofia University. I have been professionally writing software since 1999."
 support_promo_box: true
 cover-img:
@@ -70,8 +70,8 @@ cover-img:
 ---
 
 <div class="list-filters">
-  <a href="/" class="list-filter filter-selected">All posts</a>
-  <a href="/popular" class="list-filter">Most Popular</a>
+  <a href="/" class="list-filter">All posts</a>
+  <a href="/popular" class="list-filter filter-selected">Most Popular</a>
   <a href="/tutorials" class="list-filter">Tutorials</a>
   <a href="/tags" class="list-filter">Index</a>
 </div>
@@ -79,7 +79,7 @@ cover-img:
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="posts-list">
-  {% for post in posts %}
+  {% for post in site.tags.popular %}
   <article class="post-preview">
 
     {%- capture thumbnail -%}

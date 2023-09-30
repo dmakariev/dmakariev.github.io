@@ -1,0 +1,100 @@
+remote_theme: daattali/beautiful-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+title: Dimitar Makariev
+author: Dimitar Makariev
+
+
+navbar-links:
+  Blog: "/"
+  About Me / Contact: "aboutme"
+
+avatar: "/assets/img/dmakariev.jpeg"
+
+social-network-links:
+  github: dmakariev
+  twitter: dmakariev
+  linkedin: dmakariev
+#  email: "dimitar.makariev@gmail.com"  
+
+share-links-active:
+  twitter: true
+  linkedin: true
+
+excerpt_length: 50
+feed_show_excerpt: false
+feed_show_tags: false
+
+keywords: "java,java developer,spring,spring boot, spring boot apps,java consultant,spring boot consultant,dashboards,interactive dashboards,applied maths"
+
+link-col: "#404040"
+
+mobile-theme-col: "#0085A1"
+
+site-css: "/assets/css/custom-styles.css"
+site-js: "/assets/js/custom-script.js"
+
+edit_page_button: true
+
+timezone: "Europe/Sofia"
+permalink: /blog/:title/
+paginate: 10
+paginate_path: "/page:num/"
+
+#google analytics ???
+#gtag: "G-HKWW77BNTR"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: true
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "notblog"
+    values:
+      layout: "post"
+      carbonads: true
+      comments: false
+      social-share: true
+      show-share: true
+      show-subscribe: true
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "page"
+      comments: false
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      before-content: [support_promo_box.html, carbonads.html]
+      footer-extra: footer-subscribe.html
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - docs/
+  - files/java/Scrabble/*
+
+# 2fc73a3a967e97599c9763d05e564189d5
