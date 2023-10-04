@@ -164,3 +164,28 @@ some of the supported language identifiers : **java, javascript, html, c, cpp, r
     }
 ```
 
+## Displaying line numbers for highlighted code 
+
+{% raw %}
+<pre>
+{% highlight java linenos %}
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
+{% endhighlight %}
+</pre>
+{% endraw %}
+
+
+
+{% highlight java linenos %}
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
+{% endhighlight %}
+
+
