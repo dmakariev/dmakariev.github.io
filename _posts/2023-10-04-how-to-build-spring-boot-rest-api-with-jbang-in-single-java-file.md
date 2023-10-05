@@ -34,6 +34,15 @@ Open the `springbootHelloWorld.java` file in your favorite text editor or integr
 //JAVA 21
 //DEPS org.springframework.boot:spring-boot-starter-web:3.1.4
 
+package com.makariev.examples.jbang;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.web.bind.annotation.RequestParam;
+
 @SpringBootApplication
 @RestController
 public class springbootHelloWorld {
