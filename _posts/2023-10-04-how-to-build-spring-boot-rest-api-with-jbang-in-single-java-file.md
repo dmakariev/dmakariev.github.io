@@ -65,7 +65,7 @@ This code does the following:
 * Defines a REST controller with a single endpoint that returns "Hello, World!".
 
 ### Run the Application
-Save the file and return to your terminal. Navigate to the directory containing your springbootHelloWorld.java file and execute the following command:
+Save the file and return to your terminal. Navigate to the directory containing your `springbootHelloWorld.java` file and execute the following command:
 
 ```bash
 $ jbang springbootHelloWorld.java
@@ -91,7 +91,7 @@ Or if you prefer more personalized message, then navigate to `http://localhost:8
 # Conclusion
 In this blog post, we demonstrated how to create a Spring Boot Rest Api using just a single Java file and JBang. This approach can be handy for quick prototyping, lightweight applications, or when you want to reduce the complexity of your development environment. As your application grows in complexity, you can always transition to a more traditional project structure. JBang provides a flexible and efficient way to develop Java applications without the need for heavyweight project setups.
 
-Explore further and build more sophisticated Spring Boot applications using JBang. Happy coding!
+Explore further and build more [sophisticated Spring Boot applications](https://www.makariev.com/blog/how-to-build-spring-boot-monolith-with-jbang/) using JBang. Happy coding!
 
 ---
 
