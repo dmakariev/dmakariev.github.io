@@ -91,12 +91,12 @@ Or if you prefer more personalized message, then navigate to `http://localhost:8
 # Conclusion
 In this blog post, we demonstrated how to create a Spring Boot Rest Api using just a single Java file and JBang. This approach can be handy for quick prototyping, lightweight applications, or when you want to reduce the complexity of your development environment. As your application grows in complexity, you can always transition to a more traditional project structure. JBang provides a flexible and efficient way to develop Java applications without the need for heavyweight project setups.
 
-Explore further and build more [sophisticated Spring Boot applications](https://www.makariev.com/blog/how-to-build-spring-boot-monolith-with-jbang/) using JBang. Happy coding!
-
 ---
 
 [![Coffee Time!](/assets/img/blog/spring-coffee.jpg)](/assets/img/blog/spring-coffee.jpg)
 
 You could download the source from 
 [https://github.com/dmakariev/examples/tree/main/jbang](https://github.com/dmakariev/examples/tree/main/jbang)
+
+Explore further and build more [sophisticated Spring Boot applications](https://www.makariev.com/blog/how-to-build-spring-boot-monolith-with-jbang/) using JBang. Happy coding!
 
