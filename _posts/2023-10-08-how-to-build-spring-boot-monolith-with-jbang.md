@@ -17,8 +17,11 @@ Before we dive into the development process, ensure you have:
 2. JBang installed on your system. You can install it from [JBang's official website](https://www.jbang.dev/download/).
 3. Docker and Docker Compose installed for setting up the Postgres database.
 
-You could checkout the complete sources from here [https://github.com/dmakariev/examples](https://github.com/dmakariev/examples), the exact folder is [https://github.com/dmakariev/examples/tree/main/jbang/spring-boot-jpa-vue](https://github.com/dmakariev/examples/tree/main/jbang/spring-boot-jpa-vue)
-
+You can clone the `https://github.com/dmakariev/examples` repository.
+```bash
+git clone https://github.com/dmakariev/examples.git
+cd examples/jbang/spring-boot-jpa-vue
+```
 
 # Getting Started
 Let's create the files for the Spring Boot Monolith. 

@@ -15,6 +15,12 @@ JBang is a command-line tool that allows you to run Java code directly from sour
 ### Prerequisites
 Before we dive into the development process, ensure you have JBang installed on your system. You can install it from [JBang's official website](https://www.jbang.dev/download/).
 
+You can clone the `https://github.com/dmakariev/examples` repository.
+```bash
+git clone https://github.com/dmakariev/examples.git
+cd examples/jbang/spring-boot-hello-world
+```
+
 # Getting Started
 Let's create a simple Spring Boot Rest service that serves a "Hello, World!" message using JBang. Follow these steps:
 
@@ -95,8 +101,5 @@ In this blog post, we demonstrated how to create a Spring Boot Rest Api using ju
 
 [![Coffee Time!](/assets/img/blog/spring-coffee.jpg)](/assets/img/blog/spring-coffee.jpg)
 
-You could download the source from 
-[https://github.com/dmakariev/examples/tree/main/jbang](https://github.com/dmakariev/examples/tree/main/jbang)
-
-Explore further and build more [sophisticated Spring Boot applications](https://www.makariev.com/blog/how-to-build-spring-boot-monolith-with-jbang/) using JBang. Happy coding!
+Explore further and build more sophisticated [Spring Boot Monolith with JBang](https://www.makariev.com/blog/how-to-build-spring-boot-monolith-with-jbang/). Happy coding!
 
