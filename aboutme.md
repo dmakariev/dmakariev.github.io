@@ -15,8 +15,30 @@ Hi. My name is **Dimitar Makariev**.
 
 According to Malcolm Gladwell, becoming an expert requires 10,000 hours of practice. That means working 40 hours a week for 5 years. I have done that and more, and I have learned from some of the best minds in the industry. I can confidently say that I am an expert.
 
-### Introduction
+### Contact
+* For more details, you can check my [resume](https://www.makariev.com/resume/)
+* Connect with me on **LinkedIn** [https://linkedin.com/in/dmakariev](https://linkedin.com/in/dmakariev).
+* Follow me on **Twitter** [@dmakariev](https://twitter.com/dmakariev).
 
-I'm a Java software developer and consultant with a master's degree in applied mathematics from Sofia University. I started my software career in 1999 and have been using the Spring ecosystem since 2005. I have extensive experience in Java technologies and various open source frameworks, such as JPA, JAX-RS, AngularJS, React and Grails. I specialize in designing and developing complex, scalable, and distributed web systems, using agile methodologies, monoliths, microservices, cloud computing, and domain driven design. I have also worked with portal technologies, web services, security, NoSQL, messaging, and BPMN. One of my notable projects was developing an expert system for the privacy domain space, which uses a rule engine and a knowledge base with an AI inference engine to calculate the risk and completeness score of the assessments. I have been working as an independent consultant in the San Francisco Bay Area since 2011. For more details, you can check my [resume](https://www.makariev.com/resume/) and my LinkedIn profile [https://linkedin.com/in/dmakariev](https://linkedin.com/in/dmakariev). 
+I would love to hear from you, so please don't hesitate to fill out the form below and send me a message.
 
-Let's stay in touch and follow me on Twitter [@dmakariev](https://twitter.com/dmakariev).
+<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSf4pgnY-dRuZFoKo4M4Y9IwTlrgM8csoITnY_r_TflePlPNvQ/formResponse" method="POST" name="contact-form" class="validate" target="hidden_iframe_contact" onsubmit="submittedContact=true;">
+<div class="form-group">
+      <input type="text" name="entry.48481674" class="form-control form-control-lg" placeholder="Name" title="Name">
+</div>
+<div class="form-group">      
+      <input type="email" name="entry.1669587264" required="required" class="form-control form-control-lg" placeholder="Email" title="Email">
+</div>
+<div class="form-group">
+  <textarea type="text" name="entry.181303832" class="form-control form-control-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+</div>
+<div class="form-group">  
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</div>  
+</form>
+
+<script type="text/javascript">var submittedContact=false;</script>
+<iframe name="hidden_iframe_contact" id="hidden_iframe_contact_" style="display:none;" onload="if(submittedContact){window.top.location.href='/thankyou/';}"></iframe>
+<form method="POST" action="https://docs.google.com/forms/formResponse" target="hidden_iframe_contact_" onsubmit="submittedContact=true;">
+</form>
+
