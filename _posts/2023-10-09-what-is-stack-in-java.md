@@ -7,7 +7,7 @@ gh-badge: [star, fork, follow]
 ---
 
 
-Stacks are essential data structures in programming that follow the Last-In, First-Out (LIFO) principle, meaning that the last item added to the stack is the first one removed. Stacks are useful for managing data efficiently, such as reversing a word, evaluating expressions, or implementing undo/redo operations. In this blog post, you will learn how to implement stacks in Java using different built-in classes, such as Stack and Deque. You will also learn how to create a Maven project to develop and test your stack implementation using JUnit and AssertJ.
+Stacks are essential data structures in programming that follow the Last-In, First-Out (LIFO) principle, meaning that the last item added to the stack is the first one removed. Stacks are useful for managing data efficiently, such as reversing a word, evaluating expressions, or implementing undo/redo operations. In this blog post, you will learn how to implement stacks in Java using different built-in classes, such as Stack, LinkedList and Deque. You will also learn how to create a Maven project to develop and test your stack implementation using JUnit and AssertJ.
 
 
 ## Prerequisites
@@ -16,7 +16,7 @@ If you don't already have Maven installed, you can download it from the official
 You can clone the `https://github.com/dmakariev/examples` repository.
 ```bash
 git clone https://github.com/dmakariev/examples.git
-cd examples/jbang/spring-boot-hello-world
+cd examples/java-core/stack-deque
 ```
 
 ## Creating a Maven Project 
@@ -76,6 +76,7 @@ package com.makariev.examples.core;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.LinkedList;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
@@ -83,7 +84,7 @@ import java.util.Stack;
 public class StackDequeExampleTest {
 
     @Test
-    void testStackAndDequeOperations() {
+    void testStackLinkedListDeque() {
         // Create a stack
         final Stack<String> stack = new Stack<>();
         stack.push("Alan Turing");
@@ -95,14 +96,32 @@ public class StackDequeExampleTest {
         // Check the size of the stack
         assertThat(stack.size()).isEqualTo(5);
 
-        // Pop elements from the stack and check their order
+        // Pop elements from the stack and check their order (FILO)
         assertThat(stack.pop()).isEqualTo("Donald Knuth");
         assertThat(stack.pop()).isEqualTo("Ada Lovelace");
         assertThat(stack.pop()).isEqualTo("Linus Torvalds");
         assertThat(stack.pop()).isEqualTo("Grace Hopper");
         assertThat(stack.pop()).isEqualTo("Alan Turing");
 
-        // Create a deque
+        // Create a LinkedList (used as a stack)
+        final LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.push("Alan Turing");
+        linkedList.push("Grace Hopper");
+        linkedList.push("Linus Torvalds");
+        linkedList.push("Ada Lovelace");
+        linkedList.push("Donald Knuth");
+
+        // Check the size of the linked list (stack)
+        assertThat(linkedList.size()).isEqualTo(5);
+
+        // Remove elements from the linked list (stack) and check their order (FILO)
+        assertThat(linkedList.pop()).isEqualTo("Donald Knuth");
+        assertThat(linkedList.pop()).isEqualTo("Ada Lovelace");
+        assertThat(linkedList.pop()).isEqualTo("Linus Torvalds");
+        assertThat(linkedList.pop()).isEqualTo("Grace Hopper");
+        assertThat(linkedList.pop()).isEqualTo("Alan Turing");
+
+        // Create a Deque (used as a stack)
         final Deque<String> deque = new ArrayDeque<>();
         deque.push("Alan Turing");
         deque.push("Grace Hopper");
@@ -110,10 +129,10 @@ public class StackDequeExampleTest {
         deque.push("Ada Lovelace");
         deque.push("Donald Knuth");
 
-        // Check the size of the deque
+        // Check the size of the deque (stack)
         assertThat(deque.size()).isEqualTo(5);
 
-        // Pop elements from the deque and check their order
+        // Remove elements from the deque (stack) and check their order (FILO)
         assertThat(deque.pop()).isEqualTo("Donald Knuth");
         assertThat(deque.pop()).isEqualTo("Ada Lovelace");
         assertThat(deque.pop()).isEqualTo("Linus Torvalds");
