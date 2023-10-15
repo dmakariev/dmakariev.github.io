@@ -1,7 +1,7 @@
 ---
 title: What is Stack in Java?
 tags: [core java, java, junit]
-thumbnail-img: "/assets/img/blog/spring-coffee.jpg"
+thumbnail-img: "/assets/img/blog/java-coffee-3.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
 ---
@@ -159,7 +159,7 @@ In this blog post, we've explored the concept of stack and deque data structures
 
 ---
 
-[![Coffee Time!](/assets/img/blog/spring-coffee.jpg)](/assets/img/blog/spring-coffee.jpg)
+[![Coffee Time!](/assets/img/blog/java-coffee-3.jpg)](/assets/img/blog/java-coffee-3.jpg)
 
 Happy coding!
 

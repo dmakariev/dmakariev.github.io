@@ -1,7 +1,7 @@
 ---
 title: What is the Difference between '==' and 'equals()' in Java?
 tags: [core java, java, junit]
-thumbnail-img: "/assets/img/blog/spring-coffee.jpg"
+thumbnail-img: "/assets/img/blog/java-coffee-4.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
 ---
@@ -285,7 +285,7 @@ In this blog post, we've explored the differences between `==` and `equals()` in
 
 ---
 
-[![Coffee Time!](/assets/img/blog/spring-coffee.jpg)](/assets/img/blog/spring-coffee.jpg)
+[![Coffee Time!](/assets/img/blog/java-coffee-4.jpg)](/assets/img/blog/java-coffee-4.jpg)
 
 Happy coding!
 

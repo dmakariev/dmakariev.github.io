@@ -1,7 +1,7 @@
 ---
 title: What is Queue in Java?
 tags: [core java, java, junit]
-thumbnail-img: "/assets/img/blog/spring-coffee.jpg"
+thumbnail-img: "/assets/img/blog/java-coffee.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
 ---
@@ -158,7 +158,7 @@ In this blog post, we've explored the concept of queue structures in Java. Queue
 
 ---
 
-[![Coffee Time!](/assets/img/blog/spring-coffee.jpg)](/assets/img/blog/spring-coffee.jpg)
+[![Coffee Time!](/assets/img/blog/java-coffee.jpg)](/assets/img/blog/java-coffee.jpg)
 
 Happy coding!
 
