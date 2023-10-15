@@ -281,7 +281,7 @@ JUnit 5 and AssertJ will execute the test, and you should see output indicating 
 
 # Conclusion
 
-In this blog post, we've explored the differences between `==` and `equals()` in Java through ten practical examples. We've created a Maven project, removed the initial App.java and AppTest.java files, updated the dependencies to JUnit 5 and AssertJ, and built a single JUnit 5 test called EqualsExampleTest. This test demonstrates the nuances of '==' and `equals()` and serves as a valuable reference for any Java developer. Understanding when and how to use these comparison techniques is essential for writing robust and bug-free code. 
+In this blog post, we've explored the differences between `==` and `equals()` in Java through ten practical examples. This test demonstrates the nuances of '==' and `equals()` and serves as a valuable reference for any Java developer. Understanding when and how to use these comparison techniques is essential for writing robust and bug-free code. 
 
 ---
 
