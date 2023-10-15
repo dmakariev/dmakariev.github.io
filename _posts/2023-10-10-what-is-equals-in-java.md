@@ -162,6 +162,16 @@ boolean result = obj1.equals(obj2); // NullPointerException (because 'obj1' is n
 
 ### 10. Comparing Objects of Different Classes
 ```java
+String str = "Hello";
+Integer num = 5;
+boolean result = (str.equals(num)); // false (different types)
+```
+
+## JUnit 5 Test - EqualsExampleTest
+
+Let's create a single JUnit 5 test called `EqualsExampleTest.java` in the `src/test/java/com/makariev/examples/core directory` to demonstrate these examples.
+
+```java
 package com.makariev.examples.core;
 
 import org.junit.jupiter.api.Test;
