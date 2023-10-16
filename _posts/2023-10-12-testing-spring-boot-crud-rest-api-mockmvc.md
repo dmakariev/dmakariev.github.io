@@ -1,7 +1,7 @@
 ---
 title: Testing Spring Boot CRUD REST APIs with MockMvc - Practical Example
 tags: [spring boot, mockmvc, junit]
-thumbnail-img: "/assets/img/blog/spring-coffee-2.jpg"
+thumbnail-img: "/assets/img/blog/spring-coffee-2u.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
 ---
@@ -350,7 +350,7 @@ In this blog post, we've demonstrated how to create a Spring Boot project for te
 
 ---
 
-[![Coffee Time!](/assets/img/blog/spring-coffee-2.jpg)](/assets/img/blog/spring-coffee-2.jpg)
+[![Coffee Time!](/assets/img/blog/spring-coffee-2u.jpg)](/assets/img/blog/spring-coffee-2u.jpg)
 
 Happy coding!
 
