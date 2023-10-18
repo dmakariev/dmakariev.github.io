@@ -9,6 +9,8 @@ gh-badge: [star, fork, follow]
 
 Testing is a crucial part of any application development process, especially when building RESTful APIs with Spring Boot. In this blog post, we'll walk you through a practical example of testing CRUD (Create, Read, Update, Delete) REST APIs for a Person entity using Spring Data JPA with H2 as the database. We'll create a Maven project from scratch using Spring Initializr, write JUnit 5 tests, and demonstrate how to test the PersonController using MockMvc. Let's get started!
 
+* toc
+{:toc}
 
 ## Prerequisites
 If you don't already have Maven installed, you can download it from the official Maven website [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) or through SDKMAN [https://sdkman.io/sdks#maven](https://sdkman.io/sdks#maven)

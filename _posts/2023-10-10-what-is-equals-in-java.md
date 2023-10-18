@@ -9,6 +9,8 @@ gh-badge: [star, fork, follow]
 
 In Java, you often encounter situations where you need to compare objects. Two commonly used methods for comparison are the `==` operator and the `equals()` method. However, these two mechanisms differ significantly in their behavior. This blog post aims to clarify the differences between `==` and `equals()` through practical examples. We'll explore ten scenarios that illustrate when to use each of these comparison techniques. 
 
+* toc
+{:toc}
 
 ## Prerequisites
 If you don't already have Maven installed, you can download it from the official Maven website [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) or through SDKMAN [https://sdkman.io/sdks#maven](https://sdkman.io/sdks#maven)

@@ -9,6 +9,9 @@ gh-badge: [star, fork, follow]
 
 In the world of Java programming, the `hashCode()` method is a fundamental concept. It plays a pivotal role in hash-based data structures such as `HashMaps` and `HashSets`, ensuring efficient storage and retrieval of data. In this blog post, we'll delve into the `hashCode()` method, exploring what it is and how it works. We'll also demonstrate its application in `HashMaps` and `HashSets`. To facilitate your understanding, we'll create a Maven project and construct a JUnit test. This test will showcase the power of `hashCode()`. 
 
+* toc
+{:toc}
+
 
 ## Prerequisites
 If you don't already have Maven installed, you can download it from the official Maven website [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) or through SDKMAN [https://sdkman.io/sdks#maven](https://sdkman.io/sdks#maven)
