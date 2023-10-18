@@ -9,6 +9,9 @@ gh-badge: [star, fork, follow]
 
 In the world of Java development, Spring Boot has become synonymous with creating robust, scalable, and maintainable web applications. Traditionally, building a Spring Boot application involved setting up a project with a complex directory structure, multiple configuration files, and various dependencies. However, with the advent of JBang, a lightweight scripting tool for Java, you can simplify this process and build a Spring Boot Rest Api using just a single Java file. In this blog post, we will guide you through the steps to create a Spring Boot Rest Api with JBang in a single Java file.
 
+* toc
+{:toc}
+
 # What is JBang?
 JBang is a command-line tool that allows you to run Java code directly from source files without the need for a complex project setup or compilation. It is particularly useful for creating lightweight scripts and simplifying the development process.
 

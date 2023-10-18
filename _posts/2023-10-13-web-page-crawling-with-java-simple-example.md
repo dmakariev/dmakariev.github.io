@@ -8,6 +8,9 @@ gh-badge: [star, fork, follow]
 
 Web page crawling, also known as web scraping, is a powerful technique for extracting data from websites. In this tutorial, we'll explore web page crawling using Java's HttpClient. We'll create a web crawler class named Crawler, which will support both synchronous and asynchronous crawling. You can configure the crawling depth, extract links from pages, and store the crawled files in a directory. Additionally, we'll include JUnit 5 tests to ensure the reliability of our web crawler. Let's dive into the world of web page crawling with Java!
 
+* toc
+{:toc}
+
 
 ## Prerequisites
 If you don't already have Maven installed, you can download it from the official Maven website [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) or through SDKMAN [https://sdkman.io/sdks#maven](https://sdkman.io/sdks#maven)
@@ -273,7 +276,8 @@ public class JsoupLinkExtractor implements LinkExtractor {
 
 ```
 
-## Writing JUnit 5 Tests for Crawler
+## Creating Unit Tests
+###  JUnit 5 test for the `Crawler` class
 Now, let's create a single JUnit 5 test called `CrawlerTest.java` in the `src/test/java/com/makariev/examples/core` 
 
 ```java
@@ -330,7 +334,7 @@ public class CrawlerTest {
 
 ```
 
-##  JUnit 5 test for the `PlainLinkExtractor` class
+###  JUnit 5 test for the `PlainLinkExtractor` class
 Here's how you can test the extractLinks method
 ```java
 package com.makariev.examples.core;
@@ -371,7 +375,7 @@ public class PlainLinkExtractorTest {
 }
 
 ```
-##  JUnit 5 test for the `JsoupLinkExtractor` class
+###  JUnit 5 test for the `JsoupLinkExtractor` class
 Here's how you can test the extractLinks method
 ```java
 package com.makariev.examples.core;

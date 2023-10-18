@@ -7,9 +7,12 @@ gh-badge: [star, fork, follow]
 ---
 
 
-In this blog post, we will embark on an exciting journey of building a full-fledged Spring Boot monolith application implementing CRUD (Create, Read, Update, Delete) operations on a "Person" entity. We'll leverage JPA for data persistence, Swagger for API documentation, Postgres as our database, and Vue.js 3 for the front-end. All of this will be achieved using the simplicity of JBang in a single Java file!
+In this blog post, we will embark on an exciting journey of building a full-fledged **Spring Boot Monolith** application implementing CRUD (Create, Read, Update, Delete) operations on a `Person` entity. We'll leverage `JPA` for data persistence, `Swagger` for API documentation, `Postgres` as our database, and `Vue.js` 3 for the front-end. All of this will be achieved using the simplicity of `JBang` in a **single Java file**!
 
-If you are interested in building a Spring Boot monolith with JBang, you might also want to check out our previous article on [How to Build a Spring Boot Rest Api with JBang in a Single Java File](https://www.makariev.com/blog/how-to-build-spring-boot-rest-api-with-jbang-in-single-java-file/). In that post, we showed you how to use JBang to create a simple Rest web service that exposes a "Hello, World!" endpoint. We also explained how to use JBang features such as dependencies and scripts to simplify the development and execution of your Java application. 
+You might also want to check out our previous article on [How to Build a Spring Boot Rest Api with JBang in a Single Java File](https://www.makariev.com/blog/how-to-build-spring-boot-rest-api-with-jbang-in-single-java-file/). In that post, we showed you how to use JBang to create a simple Rest web service that exposes a "Hello, World!" endpoint. We also explained how to use JBang features such as dependencies and scripts to simplify the development and execution of your Java application. 
+
+* toc
+{:toc}
 
 # Prerequisites
 Before we dive into the development process, ensure you have:
@@ -600,7 +603,7 @@ $ docker compose up
 In all of the cases above, JBang will download the required Spring Boot dependencies and start the application. You will see output indicating that the Spring Boot application is running.
 
 # Access the Application
- 
+## Web-based User Interface Built with Vue.JS 
 You could access the UI at `http://localhost:8080/`
 [![Person CRUD list](/assets/img/blog/person-crud-list.png)](/assets/img/blog/person-crud-list.png)
 
@@ -610,28 +613,32 @@ You could access the UI at `http://localhost:8080/`
 
 ---
 
-The application exposes several additional features
-* the H2 Console Application, that lets you access a SQL database using a browser interface. You could access it at `http://localhost:8080/h2-console`
+## H2 SQL Console Application
+You could access the SQL database using a browser interface at `http://localhost:8080/h2-console`
 [![H2 Console](/assets/img/blog/person-crud-h2-console.png)](/assets/img/blog/person-crud-h2-console.png)
 
 ---
 
-* OpenAPI definition. You could access it at `http://localhost:8080/v3/api-docs` 
+## OpenAPI Definition 
+You could access it at `http://localhost:8080/v3/api-docs` 
 [![OpenAPI](/assets/img/blog/person-crud-openapi.png)](/assets/img/blog/person-crud-openapi.png)
 
 ---
 
-* the Swagger UI. You could access it at `http://localhost:8080/swagger-ui/index.html` 
+## Swagger UI 
+You could access it at `http://localhost:8080/swagger-ui/index.html` 
 [![OpenAPI](/assets/img/blog/person-crud-swagger-ui.png)](/assets/img/blog/person-crud-swagger-ui.png)
 
 ---
 
-* the Spring Boot actuator endpoints. You could access it at `http://localhost:8080/actuator`  
+## Spring Boot Actuator Endpoints 
+You could access it at `http://localhost:8080/actuator`  
 [![actuator](/assets/img/blog/person-crud-actuator.png)](/assets/img/blog/person-crud-actuator.png)
 
 ---
 
-* When executed with docker compose, the application provides access to web version of PgAdmin, that lets you access a SQL database using a browser interface.
+## Web Version of PgAdmin
+When executed with docker compose, the application provides access to web version of PgAdmin, that lets you access a SQL database using a browser interface.
 You could access it at `http://localhost:5050/`
 [![PgAdmin](/assets/img/blog/person-crud-pgadmin.png)](/assets/img/blog/person-crud-pgadmin.png)
 
@@ -639,11 +646,12 @@ You could access it at `http://localhost:5050/`
 
 ---
 
-### Access the Application from Terminal/CLI
+# Access the Application Rest Api 
+## In the Web Browser
 Open your web browser and navigate to `http://localhost:8080/hi`. You should see the **"Hello, World!"** message displayed in your browser.
 Or if you prefer more personalized message, then navigate to `http://localhost:8080/hi?name=Joe`. You should see the **"Hello, Joe!"** message displayed in your browser.
 
-### Using the Rest Api with Curl 
+## In the Terminal/CLI with Curl 
 
 To create a new person, use the POST method with the person data as a JSON body:
 ```bash
@@ -669,7 +677,7 @@ $ curl -X PUT -H "Content-Type: application/json" \
 http://localhost:8080/api/persons/1
 ```
 
-### Using the Rest Api with HTTPIE
+## In the Terminal/CLI with HTTPIE
 you could download alternative Terminal/CLI client from here [https://httpie.io/cli](https://httpie.io/cli) 
 
 To create a new person, use the POST method with the person data as a JSON body:
@@ -699,6 +707,7 @@ $ http DELETE http://localhost:8080/api/persons/1
 
 
 # Details About the Implementation 
+## Spring Data Jpa Dependencies
 To enable JPA, which is the Java/Jakarta Persistence API, we need 
 ```java
 //DEPS org.springframework.boot:spring-boot-starter-data-jpa:3.1.4
@@ -728,7 +737,7 @@ let's change the dependencies to
 ```
 as you can see the dependency versions are removed, the Spring Boot version is defined only once. 
 
-### Persistence : `Person` Entity and Repository
+## Persistence : `Person` Entity and Repository
 This is the JPA entity and the data repository 
 ```java
 @Data
@@ -750,7 +759,7 @@ interface PersonRepository extends JpaRepository<Person, Long> {
 }
 ```
 
-### Rest Api:  `PersonController`
+## Rest Api:  `PersonController`
 This is the rest controller 
 ```java
 @RestController
@@ -791,14 +800,14 @@ class PersonController {
 }
 ``` 
 
-### OpenAPI Support and Enable Swagger UI
+## OpenAPI Support and Enable Swagger UI
 We are using the `springdoc` project. To enable it, all we have to do is add the following dependency 
 ```java
 //DEPS org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0
 ```
 after restarting the application, you are going to get the **Swagger UI**  at the following URL `http://localhost:8080/swagger-ui/index.html`
 
-### Enable H2 Console Application
+## Enable H2 Console Application
 The H2 Console Application lets you access a SQL database using a browser interface.
 To activate it we need to add the following configuration right after the dependency section 
 ```java
@@ -809,7 +818,9 @@ To activate it we need to add the following configuration right after the depend
 
 
 # Conclusion
-In this blog post, we demonstrated how to create a Spring Boot Monolith using just a single Java file for the backend, single HTML file for the frontend and JBang. This approach can be handy for quick prototyping, lightweight applications, or when you want to reduce the complexity of your development environment. As your application grows in complexity, you can always transition to a more traditional project structure. JBang provides a flexible and efficient way to develop Java applications without the need for heavyweight project setups.
+In this blog post, we demonstrated how to create a **Spring Boot Monolith** using just a **single Java file** for the backend and a **single HTML file** for the frontend and `JBang`. This approach can be handy for quick prototyping, lightweight applications, or when you want to reduce the complexity of your development environment. As your application grows in complexity, you can always transition to a more traditional project structure. `JBang` provides a flexible and efficient way to develop Java applications without the need for heavyweight project setups.
+
+Explore further and build even more sophisticated `Spring Boot` applications using `JBang`.
 
 ---
 
@@ -817,4 +828,4 @@ In this blog post, we demonstrated how to create a Spring Boot Monolith using ju
 
 ---
 
-Explore further and build even more sophisticated Spring Boot applications using JBang. Happy coding!
+ Happy coding!

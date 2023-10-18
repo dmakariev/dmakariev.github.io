@@ -5,6 +5,9 @@ mermaid: true
 mathjax: true
 ---
 
+* toc
+{:toc}
+
 ## Enable mermaid rendering
 
 reference [https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/](https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/)
