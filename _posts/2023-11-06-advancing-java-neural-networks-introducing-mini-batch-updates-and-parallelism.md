@@ -1,7 +1,7 @@
 ---
 title: "Advancing Java Neural Networks: Introducing Mini-Batch Updates and Parallelism"
 tags: [ai, jbang, java, neural network, mnist]
-thumbnail-img: "/assets/img/blog/mnist-coffee-5.jpg"
+thumbnail-img: "/assets/img/blog/mnist-coffee-5a.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
 mermaid: true
@@ -406,7 +406,7 @@ I encourage you to explore the code, tinker with the updated `SimpleMLPBatch`, a
 
 ---
 
-[![Coffee Time!](/assets/img/blog/mnist-coffee-5.jpg)](/assets/img/blog/mnist-coffee-5.jpg)
+[![Coffee Time!](/assets/img/blog/mnist-coffee-5a.jpg)](/assets/img/blog/mnist-coffee-5a.jpg)
 
 Happy coding!
 
