@@ -1,5 +1,5 @@
 ---
-title: Unveiling MNIST - The Stepping Stone of AI Classification Tasks
+title: "Exploring the Classic MNIST: A Benchmark for Machine Learning Models"
 tags: [ai, mnist, neural network]
 thumbnail-img: "/assets/img/blog/mnist-coffee.jpg"
 gh-repo: dmakariev/examples
@@ -19,20 +19,21 @@ MNIST, which stands for the Modified National Institute of Standards and Technol
 [![Coffee Time!](/assets/img/blog/MnistExamples.png)](/assets/img/blog/MnistExamples.png)
 
 ## Where to Download the MNIST Dataset
-To embark on your journey with the MNIST dataset, you can access it directly from the original website hosted by Yann LeCun [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/). This site is providing also insights into the dataset's creation and its longstanding impact on machine learning. For those who prefer working with tabular data, a CSV version of the MNIST dataset is conveniently available on Kaggle, courtesy of Joseph Redmon [https://www.kaggle.com/datasets/oddrationale/mnist-in-csv](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv). 
-Joseph Redmon, known for his contributions to computer vision and the creation of YOLO (You Only Look Once), has made the CSV-formatted MNIST available on his website [https://pjreddie.com/projects/mnist-in-csv/](https://pjreddie.com/projects/mnist-in-csv/)
+* Access the MNIST dataset at its origin, on the website maintained by Yann LeCun. [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/). This site is providing also insights into the dataset's creation and its longstanding impact on machine learning. 
+* For those who prefer working with tabular data, a CSV version of the MNIST dataset is conveniently available on Kaggle, courtesy of Joseph Redmon [https://www.kaggle.com/datasets/oddrationale/mnist-in-csv](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv). 
+* Joseph Redmon, known for his contributions to computer vision and the creation of [YOLO (You Only Look Once)](https://pjreddie.com/darknet/yolo/), has made the CSV-formatted MNIST available on his website [https://pjreddie.com/projects/mnist-in-csv/](https://pjreddie.com/projects/mnist-in-csv/)
 
 ## Usage and Benchmarks
 
-The primary use of the **MNIST** dataset is to provide a straightforward dataset for algorithms to learn number recognition—making it a gateway into the field of machine learning for beginners. As for benchmarks, many algorithms have been tested on **MNIST**, achieving varying levels of accuracy. Simple models like k-nearest neighbors can reach about 97% accuracy, while more sophisticated neural networks, including MLPs, have achieved over 99% accuracy on the dataset.
+The primary use of the **MNIST** dataset is to provide a straightforward dataset for algorithms to learn **number recognition**—making it a gateway into the field of machine learning for beginners. As for benchmarks, many algorithms have been tested on **MNIST**, achieving varying levels of accuracy. Simple models like k-nearest neighbors can reach about 97% accuracy, while more sophisticated neural networks, including MLPs, have achieved over 99% accuracy on the dataset.
 
 # Multi-Class Classification and MLPs
 
-**MNIST** is a classic example of a multi-class classification problem, where the task is to classify the images into one of the ten possible classes (digits 0 through 9). An MLP, or Multi-Layer Perceptron, is a type of neural network that's well-suited for this kind of task. It consists of an input layer, one or more hidden layers, and an output layer.
+**MNIST** is a classic example of a multi-class classification problem, where the task is to classify the images into one of the ten possible classes (digits 0 through 9). An MLP, or **Multi-Layer Perceptron**, is a type of neural network that's well-suited for this kind of task. It consists of an input layer, one or more hidden layers, and an output layer.
 
 ## Label Encoding with One-Hot
 
-In multi-class classification, it's essential to encode categorical labels in a way that the machine learning model can understand—enter one-hot encoding. For the MNIST dataset, this means converting the numeric label of each image into a vector of length 10, where the index corresponding to the digit is marked with a 1, and all other indices are 0. For example, the digit 3 would be encoded as [0, 0, 0, 1, 0, 0, 0, 0, 0, 0].
+In multi-class classification, it's essential to encode categorical labels in a way that the machine learning model can understand — this is where **one-hot encoding** comes into play. For the MNIST dataset, this means converting the numeric label of each image into a vector of length 10, where the index corresponding to the digit is marked with a 1, and all other indices are 0. For example, the digit 3 would be encoded as [0, 0, 0, 1, 0, 0, 0, 0, 0, 0].
 
 ## Normalization of Input Data
 
@@ -56,8 +57,7 @@ The MNIST dataset serves as a fundamental benchmark in the machine learning comm
 
 ---
 
-This blog post offers a comprehensive view of the MNIST dataset and the basics of multi-class classification, paving the way for readers to appreciate the nuances of neural network training and application. It provides an understanding of the key preprocessing steps necessary for successful model training and touches on the intricacies of output interpretation, setting a solid foundation for more advanced topics in machine learning.
-
+This blog post covers the MNIST dataset and the basics of multi-class classification, paving the way for readers to appreciate the nuances of neural network training and application. It provides an understanding of the key preprocessing steps necessary for successful model training and touches on the details of output interpretation, setting a foundation for more advanced topics in machine learning.
 
 ---
 
