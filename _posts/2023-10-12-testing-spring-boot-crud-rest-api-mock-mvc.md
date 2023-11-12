@@ -4,6 +4,7 @@ tags: [spring boot, mockmvc, junit]
 thumbnail-img: "/assets/img/blog/spring-coffee-3.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
+description: Testing application development process, especially when building RESTful APIs with Spring Boot. CRUD (Create, Read, Update, Delete) REST APIs MockMvc
 ---
 
 
