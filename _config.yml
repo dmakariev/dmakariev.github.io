@@ -25,8 +25,8 @@ share-links-active:
   linkedin: true
 
 excerpt_length: 50
-feed_show_excerpt: false
-feed_show_tags: false
+feed_show_excerpt: true
+feed_show_tags: true
 
 keywords: "java,java developer,spring,spring boot, spring boot apps,java consultant,spring boot consultant,dashboards,interactive dashboards,applied maths"
 
