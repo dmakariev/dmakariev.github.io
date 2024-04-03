@@ -1,6 +1,6 @@
 ---
 title: "Fashion MNIST in CSV"
-tags: [ai, mnist, neural network]
+tags: [ai, mnist, neural network, popular]
 thumbnail-img: "/assets/img/blog/fashion-mnist-coffee.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]

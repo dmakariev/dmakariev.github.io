@@ -1,6 +1,6 @@
 ---
 title: "A Java Neural Network Tutorial: Classifying MNIST Handwritten Digits"
-tags: [ai, jbang, java, neural network, mnist]
+tags: [ai, jbang, java, neural network, mnist, popular]
 thumbnail-img: "/assets/img/blog/mnist-coffee-1.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]

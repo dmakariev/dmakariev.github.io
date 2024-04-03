@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Classic MNIST: A Benchmark for Machine Learning Models"
-tags: [ai, mnist, neural network]
+tags: [ai, mnist, neural network, popular]
 thumbnail-img: "/assets/img/blog/mnist-coffee.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]

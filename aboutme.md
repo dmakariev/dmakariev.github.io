@@ -15,6 +15,11 @@ Hi. My name is **Dimitar Makariev**.
 
 According to Malcolm Gladwell, becoming an expert requires 10,000 hours of practice. That means working 40 hours a week for 5 years. I have done that and more, and I have learned from some of the best minds in the industry. I can confidently say that I am an expert.
 
+# Consulting
+* I prefer fixed price billing for each project to maintain transparency. If I make a mistake, I prefer not to bill you by the hour for it.
+* Request proposal on my **LinkedIn Services** page
+[https://www.linkedin.com/services/page/68042b329b7b4b8042/](https://www.linkedin.com/services/page/68042b329b7b4b8042/)
+
 # Contact
 * For more details, you can check my [resume](https://www.makariev.com/resume/)
 * Connect with me on **LinkedIn** [https://linkedin.com/in/dmakariev](https://linkedin.com/in/dmakariev).
