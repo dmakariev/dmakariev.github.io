@@ -28,7 +28,7 @@ excerpt_length: 50
 feed_show_excerpt: true
 feed_show_tags: true
 
-keywords: "java,java developer,spring,spring boot, spring boot apps,java consultant,spring boot consultant,dashboards,interactive dashboards,applied maths"
+keywords: "java,java developer,spring,spring boot,java consultant,spring boot consultant,performance,optimization,prototype,startup,project,architecture,api,tutorial,how to,boilerplate,backend,best practices,domain driven,clean code,example,graalvm,beginners,database,hibernate,postgres,sql,microcervices,monolith,modulith,integration,native,rest,restful,swagger,test,testcontainers,junit,test driven,transactional"
 
 link-col: "#404040"
 
