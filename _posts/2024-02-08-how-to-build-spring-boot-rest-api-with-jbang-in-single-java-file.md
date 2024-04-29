@@ -41,7 +41,7 @@ Open the `springbootHelloWorld.java` file in your favorite text editor or integr
 ```java
 //usr/bin/env jbang "$0" "$@" ; exit $?
 //JAVA 21
-//DEPS org.springframework.boot:spring-boot-starter-web:3.1.4
+//DEPS org.springframework.boot:spring-boot-starter-web:3.2.5
 
 package com.makariev.examples.jbang;
 
@@ -61,7 +61,8 @@ public class springbootHelloWorld {
     }
 
     @GetMapping("/")
-    public String sayHi(@RequestParam(required = false, defaultValue = "World") String name) {
+    public String sayHi(
+        @RequestParam(value = "name", defaultValue = "World") String name) {
         return "Hello, " + name + "!";
     }
 }
