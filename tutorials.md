@@ -5,7 +5,7 @@ subtitle: Java Consultant / Software Developer / Applied Mathematics Practitione
 css: "/assets/css/index.css"
 share-img: /assets/img/dmakariev.jpeg
 share-title: "Dimitar Makariev - Java consultant | Tutorials"
-share-description: "I'm a Java Software developer, consultant, and a Master of Science in Applied Mathematics from Sofia University. I have been professionally writing software since 1999."
+share-description: "Java & Spring Boot Consultant / Software Developer"
 support_promo_box: true
 cover-img:
   - "/assets/img/big-imgs/0B616372-2677-4FED-BD60-F38DD9FE4C19_1_105_c.jpeg" : ""
