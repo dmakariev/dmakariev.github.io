@@ -1,6 +1,6 @@
 ---
 title: "Advanced Practices in Spring Boot: Building a Modular Application with Docker, Zipkin, and 100% Code Coverage"
-tags: [tutorial, java, spring boot, docker]
+tags: [tutorial, java, spring boot, docker, popular]
 thumbnail-img: "/assets/img/blog/spring-coffee-8.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
