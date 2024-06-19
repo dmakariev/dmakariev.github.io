@@ -11,10 +11,11 @@ Building modern web applications often involves creating a robust backend to han
 ## Related posts 
 The series includes the following posts:
 
-1. [Creating a Web Application with Spring Boot and Vue.js](https://makariev.com)
-2. [Building a Web Application with Spring Boot and Jakarta Server Faces](https://makariev.com)
-3. [Creating a Web Application with Thymeleaf and HTMX](https://makariev.com)
-4. [Comparing Web Application Development with Spring Boot Using Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX](https://makariev.com)
+1. [#nobuild Web Application Development with Spring Boot](https://www.makariev.com/blog/nobuild-web-spring-boot/)
+2. [Creating a Web Application with Spring Boot and Vue.js](https://www.makariev.com/blog/nobuild-web-spring-boot-vuejs/)
+3. [Building a Web Application with Spring Boot and Jakarta Server Faces](https://www.makariev.com/blog/nobuild-web-spring-boot-faces/)
+4. [Creating a Web Application with Thymeleaf and HTMX
+](https://www.makariev.com/blog/nobuild-web-spring-boot-thymeleaf-htmx/)
 
 ## Repository and Setup
 

@@ -12,20 +12,26 @@ Welcome to our series on **web** application development with **Spring Boot**! I
 ## Related posts 
 The series includes the following posts:
 
-1. [Creating a Web Application with Spring Boot and Vue.js](https://makariev.com)
-2. [Building a Web Application with Spring Boot and Jakarta Server Faces](https://makariev.com)
-3. [Creating a Web Application with Thymeleaf and HTMX](https://makariev.com)
-4. [Comparing Web Application Development with Spring Boot Using Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX](https://makariev.com)
+1. [#nobuild Web Application Development with Spring Boot](https://www.makariev.com/blog/nobuild-web-spring-boot/)
+2. [Creating a Web Application with Spring Boot and Vue.js](https://www.makariev.com/blog/nobuild-web-spring-boot-vuejs/)
+3. [Building a Web Application with Spring Boot and Jakarta Server Faces](https://www.makariev.com/blog/nobuild-web-spring-boot-faces/)
+4. [Creating a Web Application with Thymeleaf and HTMX
+](https://www.makariev.com/blog/nobuild-web-spring-boot-thymeleaf-htmx/)
 
 ## Repository and Setup
 
-You can clone the `https://github.com/dmakariev/examples` repository.
+You can clone the [`https://github.com/dmakariev/examples`](https://github.com/dmakariev/examples){:target="_blank"} repository.
 ```bash
 git clone https://github.com/dmakariev/examples.git
 cd examples/jbang/spring-boot-compare
 ```
-
 This repository provides a hands-on example of how to set up and run these projects using JBang.
+
+Run the application
+```bash
+jbang springbootCompare.java
+```
+Open the application in the browser [http://localhost:8080](http://localhost:8080){:target="_blank"}
 
 ## Project Overview
 In each post, we will implement a web application with the following features:
