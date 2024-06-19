@@ -70,22 +70,23 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 ## 1. Creating a Web Application with Spring Boot and Vue.js
 In this post, we'll start with the basics of integrating Spring Boot with Vue.js. Vue.js is a progressive JavaScript framework used for building user interfaces. We will cover setting up the project, configuring the back-end and front-end, and implementing the CRUD functionality.
 
-Read the full post: Creating a Web Application with Spring Boot and Vue.js
+Read the full post: [Creating a Web Application with Spring Boot and Vue.js](https://www.makariev.com/blog/nobuild-web-spring-boot-vuejs/)
 
 ## 2. Building a Web Application with Spring Boot and Jakarta Server Faces
 Next, we'll dive into Jakarta Server Faces (JSF), a Java-based web application framework. JSF simplifies the development of user interfaces for JavaServer applications. This post will guide you through integrating JSF with Spring Boot and implementing the CRUD operations.
 
-Read the full post: Building a Web Application with Spring Boot and Jakarta Server Faces
+Read the full post: [Building a Web Application with Spring Boot and Jakarta Server Faces](https://www.makariev.com/blog/nobuild-web-spring-boot-faces/)
 
 ## 3. Creating a Web Application with Thymeleaf and HTMX
 Thymeleaf is a modern server-side Java template engine for web and standalone environments. Coupled with HTMX, which allows you to access modern browser features directly from HTML, we will create a dynamic and interactive web application. This post will explain how to set up Thymeleaf and HTMX with Spring Boot.
 
-Read the full post: Creating a Web Application with Thymeleaf and HTMX
+Read the full post: [Creating a Web Application with Thymeleaf and HTMX
+](https://www.makariev.com/blog/nobuild-web-spring-boot-thymeleaf-htmx/)
 
 ## 4. Comparing Web Application Development with Spring Boot Using Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX
 Finally, we will compare the three approaches—Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX. This comparative analysis will highlight the pros and cons of each framework in the context of our CRUD application, helping you make an informed decision on which technology to use for your projects.
 
-Read the full post: Comparing Web Application Development with Spring Boot Using Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX
+Read the full post: [Comparing Web Application Development with Spring Boot Using Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX](https://www.makariev.com/blog/nobuild-web-spring-boot-compare/)
 
 Stay tuned as we embark on this journey to explore different web development frameworks with Spring Boot. 
 
