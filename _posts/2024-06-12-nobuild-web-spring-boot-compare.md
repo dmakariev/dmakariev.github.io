@@ -114,10 +114,12 @@ oha -z 30s http://localhost:8080/person-crud-htmx
 
 
 ## Conclusion
-* **Vue.js** is best for highly interactive SPAs needing a reactive UI.
-* **JSF** is suitable for server-centric applications requiring robust state management.
-* **Thymeleaf/HTMX** provides a middle ground, enhancing traditional server-side rendering with modern interactivity.
+* **Vue.js**: Ideal for highly interactive SPAs needing a reactive UI.
+* **JSF**: Best suited for server-centric applications requiring robust state management.
+* **Thymeleaf/HTMX**: A balanced approach, enhancing traditional server-side rendering with modern interactivity.
 
-Each approach has its strengths, and the best choice depends on project requirements and team expertise. For a detailed comparison and practical examples, explore the full tutorials linked in each section.
+Each approach has its strengths, and the best choice depends on project requirements and team expertise. For practical examples, explore the tutorials linked in each section.
+
+My personal favorite is **Spring Boot with Thymeleaf/HTMX**. It offers good performance and can outperform traditional SPAs (Angular/React/Vue with JSON API) depending on implementation details. The major advantage is the elimination of code duplication in the front-end application.
 
 Happy coding!
