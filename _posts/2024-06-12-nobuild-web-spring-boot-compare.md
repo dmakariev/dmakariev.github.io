@@ -1,5 +1,5 @@
 ---
-title: Comparing Web Application Development with Spring Boot Using Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX
+title: Spring Boot - Comparing Vue.js, Jakarta Server Faces, and Thymeleaf/HTMX
 tags: [spring boot, java, jbang, vuejs, jsf, faces, thymeleaf, htmx]
 thumbnail-img: "/assets/img/blog/docker-coffee.jpg"
 gh-repo: dmakariev/examples
@@ -17,6 +17,37 @@ The series includes the following posts:
 4. [Creating a Web Application with Thymeleaf and HTMX
 ](https://www.makariev.com/blog/nobuild-web-spring-boot-thymeleaf-htmx/)
 
+## Performance Comparison
+
+Performance tests were performed to compare these technologies. 
+We've used [https://github.com/hatoo/oha](https://github.com/hatoo/oha) as load generating tool
+
+* Minimal Docker configuration with JSF: 
+```yaml
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 640M
+        reservations:
+          cpus: 0.5
+          memory: 256M 
+```
+
+* Minimal Docker configuration without JSF: 
+```yaml
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 256M
+        reservations:
+          cpus: 0.5
+          memory: 256M 
+```
+
+[![Performance Comparison!](/assets/img/blog/nobuild-web-spring-boot-compare.jpg)](/assets/img/blog/nobuild-web-spring-boot-compare.jpg)
+
 ## Spring Boot and Vue.js
 
 [Building with Vue.js](https://www.makariev.com/blog/nobuild-web-spring-boot-vuejs/) involves using Vue CLI for scaffolding the project and creating a dynamic front-end. Vue.js excels in building SPAs (Single Page Applications), offering reactive data binding and a component-based architecture. Integration with Spring Boot is achieved via REST APIs, making this combination suitable for highly interactive applications.
@@ -32,6 +63,13 @@ The series includes the following posts:
 * Requires separate front-end build process
 * Initial setup can be complex
 
+### Performance Test: 
+```bash 
+oha -z 30s http://localhost:8080/api/persons
+```
+* **Requests/sec**: 1619 
+* **Average response time**: 0.0308 secs
+
 ## Spring Boot and JakartaServer Faces
 [Using JakartaServer Faces (JSF)](https://www.makariev.com/blog/nobuild-web-spring-boot-faces/) allows for a component-based framework that integrates directly with Java EE. JSF manages UI components and state on the server side, simplifying the connection to backend services.
 
@@ -46,6 +84,13 @@ The series includes the following posts:
 * Can be heavy and slower compared to modern JS frameworks
 * Less flexible for highly dynamic interfaces
 
+### Performance Test: 
+```bash
+oha -z 30s http://localhost:8080/person-crud-faces
+```
+* **Requests/sec**: 122
+* **Average response time**: 0.4097 secs
+
 ## Spring Boot, Thymeleaf, and HTMX
 [Combining Thymeleaf and HTMX](https://www.makariev.com/blog/nobuild-web-spring-boot-thymeleaf-htmx/) offers a hybrid approach. Thymeleaf handles server-side rendering, while HTMX allows for dynamic content updates without full page reloads by leveraging HTML over AJAX.
 
@@ -59,6 +104,14 @@ The series includes the following posts:
 
 * Less dynamic than a full SPA
 * Limited to HTML over AJAX for interactivity
+
+### Performance Test: 
+```bash 
+oha -z 30s http://localhost:8080/person-crud-htmx
+```
+* **Requests/sec**: 366
+* **Average response time**: 0.1366 secs
+
 
 ## Conclusion
 * **Vue.js** is best for highly interactive SPAs needing a reactive UI.
