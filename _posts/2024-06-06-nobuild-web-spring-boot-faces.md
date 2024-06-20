@@ -32,8 +32,33 @@ jbang springbootCompare.java
 ```
 Open the application in the browser [http://localhost:8080](http://localhost:8080){:target="_blank"}
 
-## Dependencies and Configuration
-First, let's set up our project dependencies and configuration. We'll use the JoinFaces library to integrate JSF with Spring Boot. The `simpledotcss` library will provide minimal CSS for styling.
+## Setting Up the Project
+Start by creating a Spring Boot project and add the necessary dependencies for Jakarta Server Faces (JSF). You can use the following dependencies in your `pom.xml`:
+```xml
+<dependencies>
+    <!-- JoinFaces library to integrate JSF with Spring Boot -->
+    <dependency>
+        <groupId>org.joinfaces</groupId>
+        <artifactId>faces-spring-boot-starter</artifactId>
+        <version>5.3.0</version>
+    </dependency>
+    <!-- minimal CSS for styling -->
+    <dependency>
+        <groupId>org.mvnpm</groupId>
+        <artifactId>simpledotcss</artifactId>
+        <version>2.3.1</version>
+    </dependency>    
+</dependencies>
+```
+
+add to `application.properties`
+```
+joinfaces.faces-servlet.enabled=true
+joinfaces.faces.automatic-extensionless-mapping=true
+```
+
+## Creating the Backing Bean, aka. the Controller
+First, let's set up our project dependencies and configuration (used by JBang). We'll use the JoinFaces library to integrate JSF with Spring Boot. The [`simpledotcss`](https://simplecss.org/){:target="_blank"} library will provide minimal CSS for styling.
 
 `FacesPersonBean.java`
 {% highlight java %}
