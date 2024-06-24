@@ -31,7 +31,7 @@ The second result of each test was recorded to ensure consistency. The Docker Co
 * **CPU: 0.5 cores, Memory: 160M**
 Here are the Dockerfiles used for the tests:
 
-**Dockerfile ( with spring-boot:process-aot)**
+#### Dockerfile ( with spring-boot:process-aot)
 ```dockerfile
 FROM ghcr.io/bell-sw/liberica-openjdk-alpine-musl:22 as build
 WORKDIR /workspace/app
@@ -50,7 +50,7 @@ COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 ENTRYPOINT ["java", "-Dspring.aot.enabled=true", "-cp","app:app/lib/*","com.makariev.examples.spring.crudhtmx.CrudHtmxApplication"]
 ```
 
-**Dockerfile**
+#### Dockerfile
 ```dockerfile
 FROM ghcr.io/bell-sw/liberica-openjdk-alpine-musl:22 as build
 WORKDIR /workspace/app
@@ -69,7 +69,7 @@ COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 ENTRYPOINT ["java", "-cp","app:app/lib/*","com.makariev.examples.spring.crudhtmx.CrudHtmxApplication"]
 ```
 
-**Dockerfile.cds**
+#### Dockerfile.cds
 ```dockerfile
 FROM ghcr.io/bell-sw/liberica-openjdk-alpine-musl:22-cds as build
 WORKDIR /workspace/app
@@ -93,7 +93,7 @@ WORKDIR /app/application
 ENTRYPOINT ["java", "-Dspring.aot.enabled=true", "-XX:SharedArchiveFile=application.jsa", "-jar", "application.jar"]
 ```
 
-**Dockerfile.cds (no spring-boot:process-aot)**
+#### Dockerfile.cds (no spring-boot:process-aot)
 ```dockerfile
 FROM ghcr.io/bell-sw/liberica-openjdk-alpine-musl:22-cds as build
 WORKDIR /workspace/app
@@ -117,7 +117,7 @@ WORKDIR /app/application
 ENTRYPOINT ["java", "-XX:SharedArchiveFile=application.jsa", "-jar", "application.jar"]
 ```
 
-**Dockerfile.native**
+#### Dockerfile.native
 ```dockerfile
 FROM ghcr.io/graalvm/native-image-community:22 as build
 WORKDIR /workspace/app
@@ -168,6 +168,28 @@ Based on the performance graphs and metrics provided, the configuration with the
 
 However, it's **`important`** to note that due to the nature of **Just-In-Time (JIT)** compilation, **plain Java** applications might achieve **better throughput rates** after a longer warm-up period. This is because **`JIT optimizes the code at runtime`** based on actual usage patterns, leading to highly optimized machine code. The trade-off, though, is that JIT-compiled applications typically consume **more memory** and have **slower startup times** compared to native images.
 
+### **`Updated based on a question`** 
+I've received the following question: 
+> I wonder when the "might surpass" event really happens. Do you have an idea?
+
+If you run the base configuration [**Dockerfile**](#dockerfile) for 15 minutes with the command:
+```bash 
+oha -z 15m http://localhost:8080/api/persons
+```
+the result is: 
+```bash 
+      Average: 0.0155 secs
+ Requests/sec: 3218.9624
+``` 
+
+In the blog post, after the second `-z 30s`, the result was:
+```bash 
+      Average: 0.1011 secs
+ Requests/sec: 494.8035 
+ ```
+ **Result**: After a **15-minute warmup**, the base configuration is approximately **`6.5 times faster`** than the configuration described in the blog post.
+
+## Conclusion
 In summary, while the native image configuration shows superior performance in both startup time and initial request handling, plain Java applications might surpass in throughput after extended operation, albeit with increased memory usage and longer startup delays.
 
 Happy coding!
