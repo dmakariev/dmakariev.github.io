@@ -178,8 +178,13 @@ oha -z 15m http://localhost:8080/api/persons
 ```
 the result is: 
 ```bash 
-      Average: 0.0155 secs
- Requests/sec: 3218.9624
+       Average: 0.0145 secs
+  Requests/sec: 3436.4164
+``` 
+If you run the CDS configuration [**Dockerfile.cds**](#dockerfilecds) with the same command `-z 15m` the result is :
+```bash 
+       Average: 0.0147 secs
+  Requests/sec: 3412.3965
 ``` 
 
 In the blog post, after the second `-z 30s`, the result was:
@@ -187,9 +192,11 @@ In the blog post, after the second `-z 30s`, the result was:
       Average: 0.1011 secs
  Requests/sec: 494.8035 
  ```
- **Result**: After a **15-minute warmup**, the base configuration is approximately **`6.5 times faster`** than the configuration described in the blog post.
+ **Result**: After a **15-minute warmup**, the base configuration is approximately **`6.5 times faster`** than the configuration described in the blog post, while the CDS configuration has nearly the same performance as the base configuration.
 
 ## Conclusion
-In summary, while the native image configuration shows superior performance in both startup time and initial request handling, plain Java applications might surpass in throughput after extended operation, albeit with increased memory usage and longer startup delays.
+In summary, while the native image configuration shows superior performance in both startup time and initial request handling, plain Java applications will surpass in throughput after extended operation, albeit with increased memory usage and longer startup delays.
+ 
+If you are operating in a highly restricted environment with a requirement for **down-to-zero**, then it would be beneficial to prepare a **native image**. Otherwise, if you run for an extended period, using a build with CDS or just plain Java, there is virtually no difference. 
 
 Happy coding!
