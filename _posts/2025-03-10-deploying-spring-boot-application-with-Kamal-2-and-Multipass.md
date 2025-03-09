@@ -1,7 +1,7 @@
 ---
 title: "Deploying a Spring Boot Application with Kamal 2 and Multipass"
 tags: [tutorial, java, spring boot, docker, deployment]
-thumbnail-img: "/assets/img/blog/kamal-multipass.jpg"
+thumbnail-img: "/assets/img/blog/kamal-multipass-2.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
 ---
