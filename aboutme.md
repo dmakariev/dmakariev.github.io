@@ -15,6 +15,20 @@ Hi. My name is **Dimitar Makariev**.
 
 According to Malcolm Gladwell, becoming an expert requires 10,000 hours of practice. That means working 40 hours a week for 5 years. I have done that and more, and I have learned from some of the best minds in the industry. I can confidently say that I am an expert.
 
+### Notable Achievements
+My work has been recognized by leading voices in the Java and Spring community, and my tutorials have gained significant visibility:
+* My blog post [Advanced Practices in Spring Boot: Building a Modular Application with Docker, Zipkin, and 100% Code Coverage](https://www.makariev.com/blog/advanced-spring-boot-structure-clean-architecture-modulith/) was featured in:
+  - [This Week in Spring - April 30th, 2024](https://spring.io/blog/2024/04/30/this-week-in-spring-april-30th-2024/) - Highlighted by Spring’s official blog for its insights on modular Spring Boot applications.
+  - [This Week in Spring - May 7th, 2024](https://spring.io/blog/2024/05/07/this-week-in-spring-may-7th-2024/) - Featured again by Spring.io for its practical approach to Docker and code coverage.
+  - [Baeldung Java Weekly #541](https://www.baeldung.com/java-weekly-541) - Included in Baeldung’s curated Java newsletter for its comprehensive tutorial.
+  - [Java Annotated Monthly – June 2024](https://blog.jetbrains.com/idea/2024/06/java-annotated-monthly-june-2024/) - Recognized by JetBrains for its advanced Spring Boot practices.
+  - [These Months in Spring – May and June 2024](https://blogs.vmware.com/tanzu/these-months-in-spring-may-and-june-2024/) - Noted by VMware Tanzu for its focus on scalable microservices architecture.
+* My blog post [Enhancing Observability in Spring Boot Microservices with Micrometer, OpenTelemetry, and Spring Modulith Starter Insight](https://www.makariev.com/blog/enhance-observability-spring-boot-microservices-with-micrometer-open-telemetry-and-spring-modulith-starter-insight/) was featured in:
+  - [This Week in Spring - May 14th, 2024](https://spring.io/blog/2024/05/14/this-week-in-spring-may-14th-2024/) - Highlighted by Spring’s official blog for its practical insights on observability with Micrometer and OpenTelemetry.
+  - [These Months in Spring – May and June 2024](https://blogs.vmware.com/tanzu/these-months-in-spring-may-and-june-2024/) - Noted by VMware Tanzu for its focus on Spring Modulith and modular architecture monitoring.
+* My tutorial [Crafting a Neural Network in One File: Java with JBang](https://www.makariev.com/blog/crafting-neural-network-in-one-file-java-with-jbang/) ranks on **Google’s first page** for searches like “java neural network tutorial” and “java neural network example code,” showcasing its accessibility and relevance to developers exploring AI in Java.
+
+
 # Consulting
 * I prefer fixed price billing for each project to maintain transparency. If I make a mistake, I prefer not to bill you by the hour for it.
 * Request proposal on my **LinkedIn Services** page
