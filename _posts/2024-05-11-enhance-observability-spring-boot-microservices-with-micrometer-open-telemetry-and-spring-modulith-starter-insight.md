@@ -131,6 +131,11 @@ When these tests are run, you'll encounter errors due to the cyclic dependency:
 By adding these observability tools to your Spring Boot microservices or applications, you can obtain valuable performance insights, even across complex structures like those encountered with cyclic dependencies. The **Spring Modulith Starter Insight**, in particular, offers a modular and flexible approach to structured monitoring, irrespective of the architecture conventions in place.
 
 Be sure to test your application's modularity with `ModularityTests` and leverage the visualized traces provided by Zipkin to fully comprehend interactions across your system's various layers.
+---
+# Featured In
+This article has been recognized by leading voices in the Spring and Java community, underscoring its value for developers enhancing observability in microservices:
+- [This Week in Spring - May 14th, 2024](https://spring.io/blog/2024/05/14/this-week-in-spring-may-14th-2024/) - Highlighted in Spring’s official blog for its practical insights on observability with Micrometer and OpenTelemetry.
+- [These Months in Spring – May and June 2024](https://blogs.vmware.com/tanzu/these-months-in-spring-may-and-june-2024/) - Noted by VMware Tanzu for its focus on Spring Modulith and modular architecture monitoring.
 
 ---
 
