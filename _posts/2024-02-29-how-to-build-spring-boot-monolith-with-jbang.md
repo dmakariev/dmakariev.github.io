@@ -1,6 +1,6 @@
 ---
 title: How to Build a Spring Boot Monolith with JBang
-tags: [tutorial, java, spring boot, jbang, docker, vue]
+tags: [tutorial, java, spring boot, jbang, docker, vue, popular]
 thumbnail-img: "/assets/img/blog/spring-monolith.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
