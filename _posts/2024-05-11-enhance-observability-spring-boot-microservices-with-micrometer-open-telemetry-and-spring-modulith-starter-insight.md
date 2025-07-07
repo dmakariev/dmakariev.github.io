@@ -1,6 +1,6 @@
 ---
 title: "Enhancing Observability in Spring Boot Microservices with Micrometer, OpenTelemetry, and Spring Modulith Starter Insight"
-tags: [tutorial, java, spring boot, mockmvc, junit]
+tags: [tutorial, java, spring boot, mockmvc, junit, popular]
 thumbnail-img: "/assets/img/blog/spring-coffee-2s.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]

@@ -1,6 +1,6 @@
 ---
 title: Crafting a Neural Network in Just One File! Java with JBang
-tags: [ai, jbang, java, neural network]
+tags: [ai, jbang, java, neural network, popular]
 thumbnail-img: "/assets/img/blog/ai-coffee-1.jpg"
 gh-repo: dmakariev/examples
 gh-badge: [star, fork, follow]
