@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-Hi. My name is **Dimitar Makariev**.
+Hi. My name is **Dimitar Makariev**. Let’s hop on a call — [book here](https://crosspaths.me/dmakariev)
 
 ### Professional Summary
 
